@@ -50,7 +50,7 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
         }
         _cols = _cols / _rows
 
-        // Start the Simple processing in order
+        // Start the Simplexe processing in order
         // to get the best solution, process until the
         // variables of the economic function are < 0
         while( findNegative(_matrix(_rows-1)) ) {
