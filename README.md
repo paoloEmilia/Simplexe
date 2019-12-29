@@ -18,10 +18,10 @@ if 420X1 + 30X2 <= 46200
 with X1, X2 >= 0
 
 
-        X1          X2     U1       U2          
- U1     420  	    30  	1       0      46200          //First constraint (X1)
- U2      30  	    300  	0       1      45000          //Second onstraint (X2)
- P      -2          -3	 	0    	0    	   0          //Objective function to maximize (P)
+           
+ 420,  	30,  	1,    0,   46200          
+ 30,   300,  	0,    1,   45000          
+ -2,    -3,	 	0 ,   0,       0          
 
  
 The program will produce : Map(P -> 620.0, X1 -> 100.0, X2 -> 140.0)
