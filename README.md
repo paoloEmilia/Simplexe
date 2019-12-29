@@ -8,19 +8,19 @@ To minimize a cost, the function objective must be DUAL and requires a
 preliminary transformation to propose a new canonical form.
 
 Example:
---------
 
 The folowing program aims to maximize : P = 2X1 + 3X2
 
-if 420X1 + 30X2 <= 46200 
+if 
+    420X1 + 30X2 <= 46200 
+
    30X1 + 300X2 <= 45000
 
 with X1, X2 >= 0
 
-
            
- 420,  	     30,  	    1,      0,   46200          
- 30,        300,  	    0,      1,   45000          
+ 420,  	     30,  	    1,      0,      46200          
+ 30,        300,  	    0,      1,      45000          
  -2,        -3,	 	    0 ,     0,       0          
 
  
