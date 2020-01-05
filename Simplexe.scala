@@ -28,11 +28,11 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
     // CONSTANTS
     private val VHB = List("X1","X2","X3","X4","X5","X6","X7","X8","X9","X10")  // Variables out of the basis
     private val VB  = List("U1","U2","U3","U4","U5","U6","U7","U8","U9","U10")  // Variables of the basis
+    private val _rows:Int = _matrix.length                                      // To get the number of rows
+    private val _cols:Int = _matrix(0).asInstanceOf[Array[Double]].size         // To get the number of columns
     
     // VARIABLES
     private var _map = Map[String, Double]()                                    // To store the basis variables and the best solution for each variabl
-    private var _rows:Int = _matrix.length                                      // To get the number of rows
-    private var _cols:Int = _matrix(0).asInstanceOf[Array[Double]].size         // To get the number of columns
     private var _colPivot = 0                                                   // To define wich variable enter in the basis
     private var _rowPivot = 0                                                   // To define the pivot row
     private var _valPivot:Double = 0d                                           // To store the value of the pivot
