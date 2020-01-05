@@ -41,7 +41,7 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
     // PROCESS THE SIMPLEXE ALGORITHM
     def process():Unit = {
 
-        // Get the matrix format
+        // Get the matrix format (m x n)
         _rows = _matrix.length
         _cols = _matrix(0).asInstanceOf[Array[Double]].size
 
@@ -58,7 +58,7 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
             // Memorize the variable wich enter in the basis
             _map += (VHB(_colPivot) -> _rowPivot.toDouble)
 
-            // SWIVELING GAUSS/JORDAN (opération de pivotage)
+            // SWIVELING GAUSS/JORDAN (pivotage Gauss/Jordan)
             for( i <- 0 until _rows ){
                 var valeurPivot = _matrix(i)(_colPivot)/_matrix(_rowPivot)(_colPivot);
                 for( j <- 0 until _cols ){
@@ -70,7 +70,7 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
                 }
             }
 
-        } //End while (the variables are now positive)
+        } //End while
 
         // Register the economic function value according
         // the last element of the matrix
@@ -82,7 +82,6 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
         }
 
     }   // end process
-
 
     // RETURN A MAP CONTAINING THE VARIABLES 
     // AND THEIRS BEST VALUES FOR EACH OF THEM

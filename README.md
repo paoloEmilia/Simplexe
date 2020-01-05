@@ -27,3 +27,5 @@ with X1, X2 >= 0
 The program will produce : Map(P -> 620.0, X1 -> 100.0, X2 -> 140.0)
 
 It means that we have to produce 100 of X1 and 140 of X2 for a profit P = 620
+
+do mojej małej myszki (Emilia)
