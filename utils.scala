@@ -15,9 +15,7 @@ object MathUtils {
 
     /* Build an adjacent matrix */
     def adjacentMatrix(dim:Int) = {
-
         var matrix = ofDim[Double](dim, dim)
-
         for {
             i <- 0 until dim
             j <- 0 until dim
@@ -29,9 +27,7 @@ object MathUtils {
             }
 
         }
-
         matrix
-
     }
 
     /* Search the pivot for the column */
