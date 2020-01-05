@@ -38,6 +38,7 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
     private var _rows:Int = _matrix.length                                      // To get the number of rows
     private var _cols:Int = _matrix(0).asInstanceOf[Array[Double]].size         // To get the number of columns
 
+
     // PROCESS THE SIMPLEXE ALGORITHM
     def process():Unit = {
 
