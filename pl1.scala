@@ -30,7 +30,6 @@ object pl1 {
         s.process()
         println(s.getResult())
         
-        
     }
 
 
