@@ -42,13 +42,8 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
     def process():Unit = {
 
         // Get the matrix format
-        for ( m <- _matrix) {
-            for ( _m <- m ) {
-                _cols += 1
-            }
-            _rows += 1
-        }
-        _cols = _cols / _rows
+        _rows = _matrix.length
+        _cols = _matrix(0).asInstanceOf[Array[Double]].size
 
         // Start the Simplexe processing in order
         // to get the best solution, process until the
