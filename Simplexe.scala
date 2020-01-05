@@ -31,19 +31,17 @@ class Simplexe ( aMatrix:Array[Array[Double]] ) {
     
     // VARIABLES
     private var _map = Map[String, Double]()                                    // To store the basis variables and the best solution for each variabl
-    private var _rows:Int = 0                                                   // To get the number of rows
-    private var _cols:Int = 0                                                   // To get the number of columns
     private var _colPivot = 0                                                   // To define wich variable enter in the basis
     private var _rowPivot = 0                                                   // To define the pivot row
     private var _valPivot:Double = 0d                                           // To store the value of the pivot
     private var _matrix:Array[Array[Double]] = aMatrix                          // The Simplexe matrix
+    private var _rows:Int = _matrix.length                                      // To get the number of rows
+    private var _cols:Int = _matrix(0).asInstanceOf[Array[Double]].size         // To get the number of columns
+
 
     // PROCESS THE SIMPLEXE ALGORITHM
     def process():Unit = {
 
-        // Get the matrix format (m x n)
-        _rows = _matrix.length
-        _cols = _matrix(0).asInstanceOf[Array[Double]].size
 
         // Start the Simplexe processing in order
         // to get the best solution, process until the
