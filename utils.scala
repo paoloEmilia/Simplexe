@@ -67,13 +67,10 @@ object MathUtils {
     /* Verify if it exists negative values related to 
     the entries of the objective function */
     def findNegative(arr:Array[Double]):Boolean = {
-        var _return:Boolean = false
-        for (i <- 0 until arr.length ) {
-            if( arr(i) < 0.toDouble ) {
-                _return = true
-            }
-        }
+        val myList = arr.map(_.toDouble).toList
+        val _return: Boolean = myList.exists(k => k < 0.toDouble )
         _return
+
     }
 
 }
