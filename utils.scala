@@ -36,16 +36,9 @@ object MathUtils {
 
     /* Search the pivot for the column */
     def findColPivot(arr:Array[Double]):Int = {
-        var _colPivot:Int = 0
-        var _tmp:Double = 0.0
-        for (i <- 0 until arr.length ) {
-            //println(_tmp > arr(i))
-            if( _tmp > arr(i) ) {
-                _tmp = arr(i)
-                _colPivot = i
-            }
-        }
-        _colPivot
+        val myList = arr.map(_.toDouble).toList
+        val _return: Int = myList.indexOf(myList.min) 
+        _return
     }
 
    /* Search the pivot for the row */
