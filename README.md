@@ -1,8 +1,5 @@
-# Simplexe
-"Simplexe.scala" and "ProcessSimplexe.scala" aim to solve the Simplex algorithm.
-
-"Simplexe.scala" has been written in an imperative way while "ProcessSimplexe.scala"
-was written in a more functional style
+# Simplex
+ProcessSimplex.scala aims to solve the simplexe algorithm.
 
 The problem proposed must be PRIMAL because it is an objective function to
 maximize. 
