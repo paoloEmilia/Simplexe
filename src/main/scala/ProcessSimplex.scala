@@ -15,6 +15,7 @@
  ** ******************************************************************************************************/
 import scala.collection.mutable.ListBuffer
 
+
 final class ProcessSimplex(_dictionary: ListBuffer[ListBuffer[Double]], _debugMode: Boolean) {
   //
   // Instance variables

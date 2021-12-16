@@ -1,5 +1,5 @@
-# Simplexe
-Simplexe.scala aims to solve the simplexe algorithm.
+# Simplex
+ProcessSimplex.scala aims to solve the simplexe algorithm.
 
 The problem proposed must be PRIMAL because it is an objective function to
 maximize. 

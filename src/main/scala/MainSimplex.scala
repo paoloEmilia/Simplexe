@@ -11,6 +11,7 @@ object MainSimplex  extends App {
 
   val ps = new ProcessSimplex(dictionary, false)
   println(ps.launchSimplex)
+  
 
 }
 
