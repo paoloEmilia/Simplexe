@@ -8,13 +8,14 @@ To minimize a cost, the function objective must be DUAL and requires a
 preliminary transformation to propose a new canonical form.
 
 Example:
-
-The folowing program aims to maximize : P = 2X1 + 3X2
+-
+The following program aims to maximize an objective function: P = 2X1 + 3X2
 
 if 
-    420X1 + 30X2 <= 46200 
 
-   30X1 + 300X2 <= 45000
+    420X1 + 30X2 <= 46200
+
+    30X1 + 300X2 <= 45000
 
 with X1, X2 >= 0
 
@@ -24,6 +25,6 @@ with X1, X2 >= 0
  -2,        -3,	 	    0 ,     0,       0          
 
  
-The program will produce : Map(P -> 620.0, X1 -> 100.0, X2 -> 140.0)
+The program (using Simplexe.scala) will produce : Map(P -> 620.0, X1 -> 100.0, X2 -> 140.0)
 
 It means that we have to produce 100 of X1 and 140 of X2 for a profit P = 620
